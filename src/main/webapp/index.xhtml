@@ -12,5 +12,14 @@
 	<p:panel>
 		<h:outputText value="#{index.message}"/>
 	</p:panel>
+
+	<h:form>
+	    <h:panelGrid columns="2" cellpadding="5">
+		<h:outputText value="Counter: " />
+		<h:outputText id="output" value="#{counterView.number}" />
+	    </h:panelGrid>
+
+	    <p:commandButton value="Count" action="#{counterView.increment}" update="output" />
+	</h:form>
 </h:body>
 </html>
