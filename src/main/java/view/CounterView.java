@@ -1,3 +1,9 @@
+package view;
+
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.RequestScoped;
+
+
 @ManagedBean
 @ViewScoped
 public class CounterView implements Serializable {
