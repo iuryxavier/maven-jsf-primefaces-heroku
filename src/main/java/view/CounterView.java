@@ -1,20 +1,22 @@
 package view;
 
-import java.io.Serializable;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.RequestScoped;
 
-@ManagedBean(name = "counterView")
-@ViewScoped
-public class CounterView implements Serializable {
-     
-    private int number;
- 
-    public int getNumber() {
-        return number;
+@ManagedBean(name = "login")
+@RequestScoped
+public class LoginView {
+    private String message;
+
+    public LoginView(){
+        message = "Login";
     }
- 
-    public void increment() {
-        number++;
+
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
     }
 }
